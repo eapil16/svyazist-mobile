@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Связист </title>
+  </head>
+  <body>
+    <div class="wrapper"> 
+      <header class="header">
+        <div class="content">
+          <div class="content-indent">
+            <div class="header-block"> 
+              <div class="header-block__logo"><a href="/"><img src="assets/images/logo.svg" alt=""></a></div>
+              <div class="header-block__menu"> 
+                <div class="header__part d-hid header__toggle"> 
+                  <div class="menu-toggle-cont"><span class="menu-toggle"></span></div>
+                </div>
+                <div class="fixed-menu">
+                  <div class="header-block__button"> <a class="btn button button-red" href="#">Подключить</a><a class="btn button button-gray" href="#">Личный кабинет</a></div>
+                  <ul class="catalog-menu">
+                    <li class="catalog-menu__item"> <a class="catalog-menu__link selected" href="#">Для дома</a></li>
+                    <li class="catalog-menu__item"> <a class="catalog-menu__link" href="#">Для бизнеса</a></li>
+                    <li class="catalog-menu__item"> <a class="catalog-menu__link" href="#">Связист ТВ</a></li>
+                  </ul>
+                  <div class="header-search"> 
+                    <form class="form"> 
+                      <input class="form-control" type="text" placeholder="Найти">
+                      <button class="button-form" type="submit"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                          <path id="Path_78" data-name="Path 78" d="M21162.191,5575.425a8.1,8.1,0,1,1,1.24-1.239l3.574,3.574-1.242,1.242Zm-11.434-6.312a6.358,6.358,0,1,0,6.355-6.36A6.361,6.361,0,0,0,21150.758,5569.112Z" transform="translate(-21149.006 -5561)" fill="#000"></path>
+                        </svg>
+                      </button>
+                    </form>
+                  </div>
+                  <ul class="company-menu"> 
+                    <li class="company-menu__item"> <a class="company-menu__link" href="#">Интернет+ТВ</a></li>
+                    <li class="company-menu__item"><a class="company-menu__link" href="#">Интернет</a></li>
+                    <li class="company-menu__item"><a class="company-menu__link" href="#">Телевидение</a></li>
+                    <li class="company-menu__item"><a class="company-menu__link" href="#">Видеонаблюдение</a></li>
+                    <li class="company-menu__item"><a class="company-menu__link" href="#">Доп. услуги</a></li>
+                  </ul>
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="header-1"> 
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1" aria-expanded="true" aria-controls="accordion-1">О компании</button>
+                      </h2>
+                      <div class="accordion-collapse collapse show" id="accordion-1" aria-labelledby="header-1" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="main-menu">
+                            <li> <a href="#">О нас</a></li>
+                            <li> <a href="#">Новости</a></li>
+                            <li> <a href="#">Акции</a></li>
+                            <li> <a href="#">Вакансии</a></li>
+                            <li> <a href="#">Закупочная деятельность</a></li>
+                            <li> <a href="#">Контакты</a></li>
+                            <li> <a href="#">Реквизиты</a></li>
+                            <li> <a href="#">Политика конфиденциальности</a></li>
+                            <li> <a href="#">Карта покрытия</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="header-2"> 
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2" aria-expanded="false" aria-controls="accordion-2">Услуги</button>
+                      </h2>
+                      <div class="accordion-collapse collapse" id="accordion-2" aria-labelledby="header-2" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="main-menu">
+                            <li> <a href="#">Пакеты услуг</a></li>
+                            <li> <a href="#">Интернет</a></li>
+                            <li> <a href="#">Интернет+ТВ</a></li>
+                            <li> <a href="#">Телевидение</a></li>
+                            <li> <a href="#">Видеонаблюдение</a></li>
+                            <li> <a href="#">Дополнительные услуги</a></li>
+                            <li> <a href="#">Оборудование</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="header-3"> 
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3" aria-expanded="false" aria-controls="accordion-3">Сервис и помощь</button>
+                      </h2>
+                      <div class="accordion-collapse collapse" id="accordion-3" aria-labelledby="header-3" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="main-menu">
+                            <li> <a href="#">Личный кабинет</a></li>
+                            <li> <a href="#">Способы оплаты</a></li>
+                            <li> <a href="#">Часто задаваемые вопросы</a></li>
+                            <li> <a href="#">Контакт-центр </a></li>
+                            <li> <a href="#">Обращение к директору</a></li>
+                            <li> <a href="#">Документы</a></li>
+                            <li> <a href="#">Текущие работы</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header-phones">	
+                    <p class="caption">Номера телефонов</p>
+                    <p>Для физических лиц: <a class="phone" href="tel:8314577777">(83145) 777-77</a></p>
+                    <p>Для юридических лиц: <a class="phone" href="tel:8314577700">(83145) 777-00</a></p>
+                    <p>Техническая поддержка:<a class="phone" href="tel:8314577777">(83145) 777-77</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main-section">
+        <div class="content">
+          <div class="content-indent">
+            <div class="error-block">
+              <div class="error-block__content"><img src="assets/images/error.png" alt="">
+                <h1>Страница не найдена</h1>
+                <p>Запрашиваемая вами страница не найдена. Возможно, она была удалена или перемещена в архив. Вы можете вернуться на главную страницу и продолжить пользоваться сайтом.</p><a class="btn button button-red" href="#">Вернуться на главную</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

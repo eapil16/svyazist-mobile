@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68" height="68" viewBox="0 0 68 68">
+  <defs>
+    <filter id="play_button" x="0" y="0" width="68" height="68" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#play_button)">
+    <path id="play_button-2" data-name="play button" d="M109,14a25,25,0,1,0,25,25A25.023,25.023,0,0,0,109,14Zm8.053,26.263-11.789,7.842a1.523,1.523,0,0,1-2.368-1.263V31.158a1.523,1.523,0,0,1,2.368-1.263l11.789,7.842A1.525,1.525,0,0,1,117.053,40.263Z" transform="translate(-75 -8)" fill="#fff"/>
+  </g>
+</svg>
