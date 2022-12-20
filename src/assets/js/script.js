@@ -148,6 +148,33 @@ document.addEventListener('DOMContentLoaded', () => {
             const collectionPromt = document.querySelectorAll('.rates-card-prompt');
             collectionPromt.forEach(e => e.classList.remove('show'));
         }
+        if(e.target.closest('.catalog-menu__home')) {
+            e.preventDefault();
+            const coll = document.querySelectorAll('.catalog-menu__link');
+            coll.forEach(element => element.classList.remove('selected'));
+            e.target.closest('.catalog-menu__home').classList.add('selected');
+            document.querySelector('.catalog-menu__dropdown_home').classList.remove('dropdown_hidd');
+            document.querySelector('.catalog-menu__dropdown_business').classList.add('dropdown_hidd');
+            document.querySelector('.catalog-menu__dropdown_tv').classList.add('dropdown_hidd');
+        }
+        if(e.target.closest('.catalog-menu__bisiness')) {
+            e.preventDefault();
+            const coll = document.querySelectorAll('.catalog-menu__link');
+            coll.forEach(element => element.classList.remove('selected'));
+            e.target.closest('.catalog-menu__bisiness').classList.add('selected');
+            document.querySelector('.catalog-menu__dropdown_home').classList.add('dropdown_hidd');
+            document.querySelector('.catalog-menu__dropdown_business').classList.remove('dropdown_hidd');
+            document.querySelector('.catalog-menu__dropdown_tv').classList.add('dropdown_hidd');
+        }
+        if(e.target.closest('.catalog-menu__tv')) {
+            e.preventDefault();
+            const coll = document.querySelectorAll('.catalog-menu__link');
+            coll.forEach(element => element.classList.remove('selected'));
+            e.target.closest('.catalog-menu__tv').classList.add('selected');
+            document.querySelector('.catalog-menu__dropdown_home').classList.add('dropdown_hidd');
+            document.querySelector('.catalog-menu__dropdown_business').classList.add('dropdown_hidd');
+            document.querySelector('.catalog-menu__dropdown_tv').classList.remove('dropdown_hidd');
+        }
     });
 
     const accordionSlider = new Swiper(".accordion-slider", {
@@ -193,6 +220,54 @@ document.addEventListener('DOMContentLoaded', () => {
             clickable: true,
         },
     });
+
+    const partnersSlider = new Swiper(".partners-slider", {
+        allowTouchMove: true,
+        slidesPerView: 'auto',
+        loop: false,
+        spaceBetween: 20,
+        speed: 800,
+        pagination: {
+            el: ".partners-pagination",
+            type: "progressbar",
+        },
+    });
+
+    const cctvotherSlider = new Swiper(".cctv-other", {
+        allowTouchMove: true,
+        slidesPerView: 'auto',
+        // loop: true,
+        spaceBetween: 20,
+        speed: 800,
+        pagination: {
+            el: ".cctv-other-pagination",
+            type: "progressbar",
+        },
+    }); 
+    
+    const businessinternetotherSlider = new Swiper(".business-int-other", {
+        allowTouchMove: true,
+        slidesPerView: 'auto',
+        // loop: true,
+        spaceBetween: 20,
+        speed: 800,
+        pagination: {
+            el: ".business-int-other-pagination",
+            type: "progressbar",
+        },
+    });
+
+    const intotherSlider = new Swiper(".int-other", {
+        allowTouchMove: true,
+        slidesPerView: 'auto',
+        // loop: true,
+        spaceBetween: 20,
+        speed: 800,
+        pagination: {
+            el: ".int-other-pagination",
+            type: "progressbar",
+        },
+    }); 
 
 });
 

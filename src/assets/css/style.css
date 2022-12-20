@@ -3467,4 +3467,157 @@ textarea.form-control {
 .cctv-form__text_content p a:hover {
   color: #000;
 }
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: transparent;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.dropdown_hidd {
+  display: none;
+}
+
+.business-catalog .main-catalog__item {
+  width: calc(50% - 20px);
+  margin: 0 10px 50px;
+}
+
+.business-catalog .main-catalog-flex {
+  margin: 0 -10px;
+}
+
+.partners-business {
+  position: relative;
+}
+
+.partners-business .swiper-pagination-progressbar.swiper-pagination-horizontal {
+  left: 0;
+  right: 0;
+}
+
+.partners-slider .swiper-slide {
+  width: 210px;
+}
+
+.partners-slider__content {
+  margin: 0 -25px 0 0;
+}
+
+.partners-slide {
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.business-telephony-slider .main-slider {
+  margin-top: 0;
+}
+
+.odds-business__item {
+  padding: 30px;
+  background: #F1F3F6;
+  margin: 0 0 15px 0;
+  height: 200px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.odds-business__item_image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  max-width: 130px;
+}
+
+.odds-business__item_image img {
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.odds-business__item_text {
+  max-width: 220px;
+}
+
+.odds-business__item_text p {
+  font-size: 17px;
+  line-height: 20px;
+  color: #000;
+  font-weight: 600;
+  margin: 0;
+}
+
+.rates-card p.price strong {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #000;
+  margin: 16px 5px 0 0;
+}
+
+.internet-other__bisiness {
+  padding: 0;
+}
+
+.rates-card p.full-text {
+  height: 72px;
+  overflow: hidden;
+}
+
+.cctv-other {
+  padding: 10px 10px 20px;
+}
+
+.cctv-other .swiper-slide {
+  width: 250px;
+}
+
+.business-int-slider .main-slider {
+  margin-top: 0;
+}
+
+.business-int-slider .main-slide__text p {
+  margin: 0;
+}
+
+.business-int-other {
+  padding: 10px 10px 20px;
+}
+
+.business-int-other .swiper-slide {
+  width: 250px;
+}
+
+.int-other {
+  padding: 10px 10px 20px;
+}
+
+.int-other .swiper-slide {
+  width: 250px;
+}
+
+.cctv-form__text {
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */
