@@ -23,9 +23,9 @@
                 <div class="fixed-menu">
                   <div class="header-block__button"> <a class="btn button button-red" href="#">Подключить</a><a class="btn button button-gray" href="#">Личный кабинет</a></div>
                   <ul class="catalog-menu">
-                    <li class="catalog-menu__item"> <a class="catalog-menu__home catalog-menu__link" href="#">Для дома</a></li>
-                    <li class="catalog-menu__item"> <a class="catalog-menu__bisiness catalog-menu__link selected" href="#">Для бизнеса</a></li>
-                    <li class="catalog-menu__item"> <a class="catalog-menu__tv catalog-menu__link" href="#">Связист ТВ</a></li>
+                    <li class="catalog-menu__item"> <a class="catalog-menu__link selected" href="#">Для дома</a></li>
+                    <li class="catalog-menu__item"> <a class="catalog-menu__link" href="#">Для бизнеса</a></li>
+                    <li class="catalog-menu__item"> <a class="catalog-menu__link" href="#">Связист ТВ</a></li>
                   </ul>
                   <div class="header-search"> 
                     <form class="form"> 
@@ -37,187 +37,67 @@
                       </button>
                     </form>
                   </div>
-                  <div class="catalog-menu__dropdown_home dropdown_hidd">
-                    <ul class="company-menu">
-                      <li class="company-menu__item"> <a class="company-menu__link" href="#">Для дома</a></li>
-                      <li class="company-menu__item"> <a class="company-menu__link" href="#">Интернет+ТВ</a></li>
-                      <li class="company-menu__item"><a class="company-menu__link" href="#">Интернет</a></li>
-                    </ul>
-                    <div class="accordion" id="accordionExample">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="header-1"> 
-                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1" aria-expanded="true" aria-controls="accordion-1">О компании</button>
-                        </h2>
-                        <div class="accordion-collapse collapse show" id="accordion-1" aria-labelledby="header-1" data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                            <ul class="main-menu">
-                              <li> <a href="#">О нас</a></li>
-                              <li> <a href="#">Новости</a></li>
-                              <li> <a href="#">Акции</a></li>
-                              <li> <a href="#">Вакансии</a></li>
-                              <li> <a href="#">Закупочная деятельность</a></li>
-                              <li> <a href="#">Контакты</a></li>
-                              <li> <a href="#">Реквизиты</a></li>
-                              <li> <a href="#">Политика конфиденциальности</a></li>
-                              <li> <a href="#">Карта покрытия</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="header-2"> 
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2" aria-expanded="false" aria-controls="accordion-2">Услуги</button>
-                        </h2>
-                        <div class="accordion-collapse collapse" id="accordion-2" aria-labelledby="header-2" data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                            <ul class="main-menu">
-                              <li> <a href="#">Пакеты услуг</a></li>
-                              <li> <a href="#">Интернет</a></li>
-                              <li> <a href="#">Интернет+ТВ</a></li>
-                              <li> <a href="#">Телевидение</a></li>
-                              <li> <a href="#">Видеонаблюдение</a></li>
-                              <li> <a href="#">Дополнительные услуги</a></li>
-                              <li> <a href="#">Оборудование</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="header-3"> 
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3" aria-expanded="false" aria-controls="accordion-3">Сервис и помощь</button>
-                        </h2>
-                        <div class="accordion-collapse collapse" id="accordion-3" aria-labelledby="header-3" data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                            <ul class="main-menu">
-                              <li> <a href="#">Личный кабинет</a></li>
-                              <li> <a href="#">Способы оплаты</a></li>
-                              <li> <a href="#">Часто задаваемые вопросы</a></li>
-                              <li> <a href="#">Контакт-центр </a></li>
-                              <li> <a href="#">Обращение к директору</a></li>
-                              <li> <a href="#">Документы</a></li>
-                              <li> <a href="#">Текущие работы</a></li>
-                            </ul>
-                          </div>
+                  <ul class="company-menu"> 
+                    <li class="company-menu__item"> <a class="company-menu__link" href="#">Интернет+ТВ</a></li>
+                    <li class="company-menu__item"><a class="company-menu__link" href="#">Интернет</a></li>
+                    <li class="company-menu__item"><a class="company-menu__link" href="#">Телевидение</a></li>
+                    <li class="company-menu__item"><a class="company-menu__link" href="#">Видеонаблюдение</a></li>
+                    <li class="company-menu__item"><a class="company-menu__link" href="#">Доп. услуги</a></li>
+                  </ul>
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="header-1"> 
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1" aria-expanded="true" aria-controls="accordion-1">О компании</button>
+                      </h2>
+                      <div class="accordion-collapse collapse show" id="accordion-1" aria-labelledby="header-1" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="main-menu">
+                            <li> <a href="#">О нас</a></li>
+                            <li> <a href="#">Новости</a></li>
+                            <li> <a href="#">Акции</a></li>
+                            <li> <a href="#">Вакансии</a></li>
+                            <li> <a href="#">Закупочная деятельность</a></li>
+                            <li> <a href="#">Контакты</a></li>
+                            <li> <a href="#">Реквизиты</a></li>
+                            <li> <a href="#">Политика конфиденциальности</a></li>
+                            <li> <a href="#">Карта покрытия</a></li>
+                          </ul>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="catalog-menu__dropdown_business">
-                    <ul class="company-menu"> 
-                      <li class="company-menu__item"> <a class="company-menu__link" href="#">Для бизнеса</a></li>
-                      <li class="company-menu__item"><a class="company-menu__link" href="#">Видеонаблюдение</a></li>
-                      <li class="company-menu__item"><a class="company-menu__link" href="#">Телефония</a></li>
-                      <li class="company-menu__item"><a class="company-menu__link" href="#">Телевидение</a></li>
-                      <li class="company-menu__item"><a class="company-menu__link" href="#">Доп. услуги</a></li>
-                      <li class="company-menu__item"><a class="company-menu__link" href="#">Оборудование</a></li>
-                    </ul>
-                    <div class="accordion" id="accordionExample-1">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="header-1-1"> 
-                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1-1" aria-expanded="true" aria-controls="accordion-1-1">О компании</button>
-                        </h2>
-                        <div class="accordion-collapse collapse show" id="accordion-1-1" aria-labelledby="header-1-1" data-bs-parent="#accordionExample-1">
-                          <div class="accordion-body">
-                            <ul class="main-menu">
-                              <li> <a href="#">О нас</a></li>
-                              <li> <a href="#">Новости</a></li>
-                              <li> <a href="#">Акции</a></li>
-                              <li> <a href="#">Вакансии</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="header-1-2"> 
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1-2" aria-expanded="false" aria-controls="accordion-1-2">Услуги</button>
-                        </h2>
-                        <div class="accordion-collapse collapse" id="accordion-1-2" aria-labelledby="header-1-2" data-bs-parent="#accordionExample-1">
-                          <div class="accordion-body">
-                            <ul class="main-menu">
-                              <li> <a href="#">Пакеты услуг</a></li>
-                              <li> <a href="#">Интернет</a></li>
-                              <li> <a href="#">Интернет+ТВ</a></li>
-                              <li> <a href="#">Телевидение</a></li>
-                              <li> <a href="#">Видеонаблюдение</a></li>
-                              <li> <a href="#">Дополнительные услуги</a></li>
-                              <li> <a href="#">Оборудование</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="header-1-3"> 
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1-3" aria-expanded="false" aria-controls="accordion-1-3">Сервис и помощь</button>
-                        </h2>
-                        <div class="accordion-collapse collapse" id="accordion-1-3" aria-labelledby="header-1-3" data-bs-parent="#accordionExample-1">
-                          <div class="accordion-body">
-                            <ul class="main-menu">
-                              <li> <a href="#">Личный кабинет</a></li>
-                              <li> <a href="#">Способы оплаты</a></li>
-                              <li> <a href="#">Часто задаваемые вопросы</a></li>
-                              <li> <a href="#">Контакт-центр </a></li>
-                              <li> <a href="#">Обращение к директору</a></li>
-                              <li> <a href="#">Документы</a></li>
-                              <li> <a href="#">Текущие работы</a></li>
-                            </ul>
-                          </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="header-2"> 
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2" aria-expanded="false" aria-controls="accordion-2">Услуги</button>
+                      </h2>
+                      <div class="accordion-collapse collapse" id="accordion-2" aria-labelledby="header-2" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="main-menu">
+                            <li> <a href="#">Пакеты услуг</a></li>
+                            <li> <a href="#">Интернет</a></li>
+                            <li> <a href="#">Интернет+ТВ</a></li>
+                            <li> <a href="#">Телевидение</a></li>
+                            <li> <a href="#">Видеонаблюдение</a></li>
+                            <li> <a href="#">Дополнительные услуги</a></li>
+                            <li> <a href="#">Оборудование</a></li>
+                          </ul>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="catalog-menu__dropdown_tv dropdown_hidd">
-                    <ul class="company-menu"> 
-                      <li class="company-menu__item"> <a class="company-menu__link" href="#">Связист ТВ</a></li>
-                      <li class="company-menu__item"><a class="company-menu__link" href="#">Интернет</a></li>
-                      <li class="company-menu__item"><a class="company-menu__link" href="#">Телевидение</a></li>
-                    </ul>
-                    <div class="accordion" id="accordionExample-2">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="header-2-1"> 
-                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2-1" aria-expanded="true" aria-controls="accordion-2-1">О компании</button>
-                        </h2>
-                        <div class="accordion-collapse collapse show" id="accordion-2-1" aria-labelledby="header-2-1" data-bs-parent="#accordionExample-2">
-                          <div class="accordion-body">
-                            <ul class="main-menu">
-                              <li> <a href="#">О нас</a></li>
-                              <li> <a href="#">Новости</a></li>
-                              <li> <a href="#">Акции</a></li>
-                              <li> <a href="#">Вакансии</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="header-2-2"> 
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2-2" aria-expanded="false" aria-controls="accordion-2-2">Услуги</button>
-                        </h2>
-                        <div class="accordion-collapse collapse" id="accordion-2-2" aria-labelledby="header-2-2" data-bs-parent="#accordionExample-2">
-                          <div class="accordion-body">
-                            <ul class="main-menu">
-                              <li> <a href="#">Пакеты услуг</a></li>
-                              <li> <a href="#">Интернет</a></li>
-                              <li> <a href="#">Интернет+ТВ</a></li>
-                              <li> <a href="#">Телевидение</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="header-2-3"> 
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2-3" aria-expanded="false" aria-controls="accordion-2-3">Сервис и помощь</button>
-                        </h2>
-                        <div class="accordion-collapse collapse" id="accordion-2-3" aria-labelledby="header-2-3" data-bs-parent="#accordionExample-2">
-                          <div class="accordion-body">
-                            <ul class="main-menu">
-                              <li> <a href="#">Личный кабинет</a></li>
-                              <li> <a href="#">Способы оплаты</a></li>
-                              <li> <a href="#">Часто задаваемые вопросы</a></li>
-                              <li> <a href="#">Контакт-центр </a></li>
-                              <li> <a href="#">Обращение к директору</a></li>
-                              <li> <a href="#">Документы</a></li>
-                              <li> <a href="#">Текущие работы</a></li>
-                            </ul>
-                          </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="header-3"> 
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3" aria-expanded="false" aria-controls="accordion-3">Сервис и помощь</button>
+                      </h2>
+                      <div class="accordion-collapse collapse" id="accordion-3" aria-labelledby="header-3" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="main-menu">
+                            <li> <a href="#">Личный кабинет</a></li>
+                            <li> <a href="#">Способы оплаты</a></li>
+                            <li> <a href="#">Часто задаваемые вопросы</a></li>
+                            <li> <a href="#">Контакт-центр </a></li>
+                            <li> <a href="#">Обращение к директору</a></li>
+                            <li> <a href="#">Документы</a></li>
+                            <li> <a href="#">Текущие работы</a></li>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -237,162 +117,38 @@
       <main class="main-section">
         <div class="content">
           <div class="content-indent">
-            <div class="main-slider swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="main-slide">
-                    <div class="main-slide__image">	<img src="assets/images/slide-7.png" alt=""></div>
-                    <div class="main-slide__text"> 
-                      <h1 class="main-slide__text_caption">Быстрый интернет<br/>для игр и развлечений</h1>
-                      <p>Подключите и смотрите на телевизоре 200 ТВ-каналов, более 50 000 фильмов и сериалов</p><a class="btn button button-blue" href="#">Узнать подробнее				</a>
+            <div class="inside-block">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                  <li class="breadcrumb-item"><a href="#">Акции</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Приведи друга - получи скидку</li>
+                </ol>
+              </nav>
+              <div class="text-page">
+                <h1>Приведи друга - получи скидку	</h1>
+                <p class="note">Вы уже являетесь пользователем услуг компании Связист и готовы рекомендовать подключиться своим друзьям и соседям? Тогда действуйте!</p><a class="btn button button-blue" href="#">Участвовать в акции</a><img class="full-image" src="assets/images/text-33.png" alt="">
+                <p>- Какую скидку вы получите?</p>
+                <p>За каждого подключенного друга мы вам скажем спасибо и зачислим скидку в размере его абонентской платы  на ваш лицевой счёт.</p>
+                <p>- Что для этого нужно?</p>
+                <p>Попросите друга назвать ваш номер договора при подаче заявки.</p>
+                <p>- Какое количество друзей можно пригласить?</p>
+                <p>Приглашайте неограниченное кол-во друзей и получайте скидки ежемесячно!</p>
+                <p>Подробности уточняйте по телефону <a class="link" href="tel:88314577711">8 (83145) 777-11</a></p>
+              </div>
+              <div class="main-form indent-block">
+                <div class="main-form__text"> 
+                  <div class="main-form__text_content"> 
+                    <h2>Акция! Лови скидку</h2>
+                    <p>Интернет + ТВ для частного сектора за 1 рубль</p>
+                    <div class="form-group"> 
+                      <input class="form-control" type="text" placeholder="Номер телефона*">
                     </div>
+                    <p class="info">Нажимая кнопку, я даю согласие на обработку <a href="#">персональных данных.</a></p>
+                    <button class="btn button button-red" type="submit">Получить скидку</button>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="main-slide">
-                    <div class="main-slide__image">	<img src="assets/images/slide-7.png" alt=""></div>
-                    <div class="main-slide__text"> 
-                      <p class="main-slide__text_caption">Быстрый интернет </p>
-                      <p>Подключите и смотрите на телевизоре 200 ТВ-каналов, более 50 000 фильмов и сериалов</p><a class="btn button button-blue" href="#">Узнать подробнее	</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="main-slide">
-                    <div class="main-slide__image">	<img src="assets/images/slide-7.png" alt=""></div>
-                    <div class="main-slide__text"> 
-                      <p class="main-slide__text_caption">Быстрый интернет для игр </p>
-                      <p>Подключите и смотрите на телевизоре 200 ТВ-каналов, более 50 000 фильмов и сериалов</p><a class="btn button button-blue" href="#">Узнать подробнее	</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-pagination main-pagination"></div>
-            </div>
-            <div class="main-catalog business-catalog">
-              <div class="main-catalog-flex"> <a class="main-catalog__item" href="">
-                  <div class="main-catalog__item__image"><img src="assets/images/icon-1.png" alt=""></div><span>Интернет в квартиру</span></a><a class="main-catalog__item" href="">
-                  <div class="main-catalog__item__image"><img src="assets/images/icon-4.png" alt=""></div><span>Видеонаблюдение</span></a><a class="main-catalog__item" href="">
-                  <div class="main-catalog__item__image"><img src="assets/images/icon-6.png" alt=""></div><span>Оборудование</span></a><a class="main-catalog__item" href="">
-                  <div class="main-catalog__item__image"><img src="assets/images/icon-7.png" alt=""></div><span>Телефония</span></a></div>
-            </div>
-            <div class="internet-block indent-block__bottom">
-              <div class="internet-block__text">
-                <h2>Для бизнеса</h2>
-                <p>Таким образом рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. Таким образом рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p><a class="btn button button-blue" href="#">Оставить заявку</a>
-              </div>
-            </div>
-            <div class="for-business indent-block">
-              <div class="about-company__item"> 
-                <div class="about-company__item_text"> <a class="link" href="#">Интернет</a></div><a class="btn button button-blue" href="#">Подробнее</a>
-                <div class="about-company__item_image"><img src="assets/images/about-1.png" alt=""></div>
-              </div>
-              <div class="about-company__item"> 
-                <div class="about-company__item_text"> <a class="link" href="#">Видеонаблюдение</a></div><a class="btn button button-blue" href="#">Подробнее</a>
-                <div class="about-company__item_image"><img src="assets/images/about-9.png" alt=""></div>
-              </div>
-              <div class="about-company__item"> 
-                <div class="about-company__item_text"> <a class="link" href="#">Телефония</a></div><a class="btn button button-blue" href="#">Подробнее</a>
-                <div class="about-company__item_image"><img src="assets/images/about-10.png" alt=""></div>
-              </div>
-              <div class="about-company__item"> 
-                <div class="about-company__item_text"> <a class="link" href="#">ВАТС</a></div><a class="btn button button-blue" href="#">Подробнее</a>
-                <div class="about-company__item_image"><img src="assets/images/about-11.png" alt=""></div>
-              </div>
-              <div class="about-company__item"> 
-                <div class="about-company__item_text"> <a class="link" href="#">Корпоративные сети</a></div><a class="btn button button-blue" href="#">Подробнее</a>
-                <div class="about-company__item_image"><img src="assets/images/about-12.png" alt=""></div>
-              </div>
-              <div class="about-company__item"> 
-                <div class="about-company__item_text"> <a class="link" href="#">СКУД</a></div><a class="btn button button-blue" href="#">Подробнее</a>
-                <div class="about-company__item_image"><img src="assets/images/about-13.png" alt=""></div>
-              </div>
-              <div class="about-company__item"> 
-                <div class="about-company__item_text"> <a class="link" href="#">СКС</a></div><a class="btn button button-blue" href="#">Подробнее</a>
-                <div class="about-company__item_image"><img src="assets/images/about-14.png" alt=""></div>
-              </div>
-              <div class="about-company__item"> 
-                <div class="about-company__item_text"> <a class="link" href="#">СМР</a></div><a class="btn button button-blue" href="#">Подробнее</a>
-                <div class="about-company__item_image"><img src="assets/images/about-15.png" alt=""></div>
-              </div>
-              <div class="about-company__item"> 
-                <div class="about-company__item_text"> <a class="link" href="#">Выдача ТУ</a></div><a class="btn button button-blue" href="#">Подробнее</a>
-                <div class="about-company__item_image"><img src="assets/images/about-16.png" alt=""></div>
-              </div>
-              <div class="about-company__item"> 
-                <div class="about-company__item_text"> <a class="link" href="#">Аренда инфраструктуры</a></div><a class="btn button button-blue" href="#">Подробнее</a>
-                <div class="about-company__item_image"><img src="assets/images/about-17.png" alt=""></div>
-              </div>
-              <div class="about-company__item"> 
-                <div class="about-company__item_text"> <a class="link" href="#">Аренда каналов связи</a></div><a class="btn button button-blue" href="#">Подробнее</a>
-                <div class="about-company__item_image"><img src="assets/images/about-18.png" alt=""></div>
-              </div>
-            </div>
-            <div class="main-odds">
-              <h2>Почему Связист?</h2>
-              <div class="main-odds-flex"> 
-                <div class="main-odds__item"> <strong>Мы всегда рядом!</strong>
-                  <p>4 офиса шаговой доступности</p>
-                  <div class="main-odds__item_image"><img src="assets/images/odd-1.png" alt=""></div>
-                </div>
-                <div class="main-odds__item"> <strong>Возможность тестирования наших услуг</strong>
-                  <p>Сомневаешься? Протестируй!</p>
-                  <div class="main-odds__item_image"><img src="assets/images/odd-2.png" alt=""></div>
-                </div>
-                <div class="main-odds__item"> <strong>Техническая поддержка 24/7</strong>
-                  <p>Всегда готовы Вам помочь</p>
-                  <div class="main-odds__item_image"><img src="assets/images/odd-1.png" alt=""></div>
-                </div>
-              </div>
-            </div>
-            <div class="partners-business indent-block">
-              <h2>Партнеры, которые пользуются нашими услугами</h2>
-              <div class="partners-slider__content">
-                <div class="partners-slider swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="partners-slide">
-                        <div class="partners-slide__image">	<img src="assets/images/partner-1.png" alt=""></div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="partners-slide">
-                        <div class="partners-slide__image">	<img src="assets/images/partner-2.png" alt=""></div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="partners-slide">
-                        <div class="partners-slide__image">	<img src="assets/images/partner-3.png" alt=""></div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="partners-slide">
-                        <div class="partners-slide__image">	<img src="assets/images/partner-4.png" alt=""></div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="partners-slide">
-                        <div class="partners-slide__image">	<img src="assets/images/partner-5.png" alt=""></div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="partners-slide">
-                        <div class="partners-slide__image">	<img src="assets/images/partner-2.png" alt=""></div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="partners-slide">
-                        <div class="partners-slide__image">	<img src="assets/images/partner-4.png" alt=""></div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="partners-slide">
-                        <div class="partners-slide__image">	</div><img src="assets/images/partner-4.png" alt="">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-pagination partners-pagination"></div>
+                <div class="main-form__image"> <img src="assets/images/form-22.png" alt=""></div>
               </div>
             </div>
           </div>
